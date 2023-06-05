@@ -93,4 +93,8 @@ footer {
     color: #050404;
     padding: 5px;
     text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
