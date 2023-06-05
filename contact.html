@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="This website is made to learn and give the good information to world">
+    <meta name="keywords" content="learning, projects, programing">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="stylesheet/contact_styles.css">
+    <script src="javascript/contact_script.js"></script>
+
+</head>
+<header>
+    <h1>STSPSW</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#" class="active">Contact</a></li>
+    </ul>
+</nav>
+
+<body>
+    <div id="contact-popup" class="contact-form-popup">
+        <form id="contact-form" onsubmit="submitForm(event)">
+            <h2>We would love to hear from you!</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your good name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="question">Question or suggestion:</label>
+                <textarea id="question" name="question" required placeholder="Any question or suggestion"></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">Submit</button>
+            <button type="button" class="close-button" onclick="closePopup()">Close</button>
+        </form>
+    </div>
+
+    <button type="button" class="open-button" onclick="openPopup()">Contact Us</button>
+
+    <div id="thank-you-popup" class="thank-you-popup">
+        <h2>Thank You!</h2>
+        <p>Your form has been submitted successfully.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 stspsw. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 8vh;
+    background-color: #a1d6e5;
+    animation-name: dropEffect;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes dropEffect {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 32px;
+    color: #333;
+}
+
+.contact-form-popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    padding-right: 20px;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    z-index: 9999;
+
+}
+
+.contact-form-popup h2 {
+    margin-top: 0;
+}
+
+.contact-form-popup form {
+    margin: 0;
+}
+
+.contact-form-popup label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form-popup input[type="text"],
+.contact-form-popup input[type="email"],
+.contact-form-popup input[type="tel"],
+.contact-form-popup textarea {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.contact-form-popup .submit-button {
+    background-color: #45a049;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact-form-popup .submit-button:hover {
+    background-color: #04f80d;
+    color: #050404;
+    font-weight: bold;
+}
+
+.contact-form-popup .close-button {
+    background-color: #ccc;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.contact-form-popup .close-button:hover {
+    background-color: #a51313e8;
+    font-weight: bold;
+    color: #050404;
+}
+
+.open-button {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    padding: 10px;
+    background-color: #e8ea51;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-shadow: #050404;
+    font-weight: bold;
+    font-size: large;
+}
+
+.open-button:hover {
+    background-color: #a1d6e5;
+}
+
+#thank-you-popup {
+    display: none;
+    padding-left: 40%;
+    margin-top: 60px;
+    /* Hide the "thank you" popup by default */
+}
+
+#contact-animation {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #ddd;
+}
+
+nav li a.active {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+
+html,
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background-color: #bbf5ae;
+    color: #050404;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
