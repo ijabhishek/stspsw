@@ -105,7 +105,9 @@ h1 {
 }
 
 .open-button {
-    top: 20px;
+    margin-top: 40px;
+    margin-left: 20px;
+    top: 40px;
     right: 30px;
     padding: 10px;
     background-color: #e8ea51;
