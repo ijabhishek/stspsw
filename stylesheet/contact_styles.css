@@ -6,27 +6,18 @@ body {
 
 header {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 8vh;
-    background-color: #a1d6e5;
-    animation-name: dropEffect;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
+    align-items: center;
+    height: 12vh;
+    margin-top: 10px;
 }
 
-@keyframes dropEffect {
-    0% {
-        transform: translateY(-100%);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
+.image-container {
+    transform: scale(0.6);
+    overflow: hidden;
+    padding: 15px;
 }
 
 h1 {
-    margin-top: 10px;
     font-size: 32px;
     color: #333;
 }
@@ -148,8 +139,9 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #f1f1f1;
+    background-color: #18d366;
     overflow: hidden;
+    font-weight: bold;
 }
 
 nav li {
@@ -169,7 +161,7 @@ nav li a:hover {
 }
 
 nav li a.active {
-    background-color: #4CAF50;
+    background-color: #FD6C03;
     color: #fff;
 }
 
@@ -182,15 +174,47 @@ body {
     height: 100%;
 }
 
+.contact-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.quote-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.author {
+    font-weight: bold;
+    font-size: 14px;
+    color: #777;
+}
+
 footer {
+    background-color: #312f2f;
     position: relative;
-    width: 100%;
-    background-color: #bbf5ae;
-    color: #050404;
+    color: #ffffff;
     padding: 5px;
     text-align: center;
-    position: fixed;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100%;
+}
+
+.powered-by {
+    width: auto;
+    height: 30px;
+    margin-left: 10px;
 }
