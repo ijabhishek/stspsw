@@ -5,40 +5,31 @@ body {
     padding: 0;
 }
 
-@keyframes dropEffect {
-    0% {
-        transform: translateY(-100%);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
-
 header {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 8vh;
-    background-color: #a1d6e5;
-    animation-name: dropEffect;
-    animation-duration: 2s;
-    animation-timing-function: ease-in-out;
+    align-items: center;
+    height: 12vh;
+    margin-top: 10px;
+}
+
+.image-container {
+    transform: scale(0.6);
+    overflow: hidden;
+    padding: 15px;
 }
 
 h1 {
-    margin-top: 10px;
     font-size: 32px;
-    color: #1d1a1d;
+    color: #333;
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #f1f1f1;
+    background-color: #18d366;
     overflow: hidden;
+    font-weight: bold;
 }
 
 nav li {
@@ -58,19 +49,35 @@ nav li a:hover {
 }
 
 nav li a.active {
-    background-color: #4CAF50;
+    background-color: #fd6c03;
     color: #fff;
 }
 
-
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
+.who-we-are {
+    font-family: 'blanka';
+    font-size: 50px;
+    color: #fd7c03;
+    text-align: center;
 }
 
-p {
-    margin-bottom: 10px;
+p.description {
+    text-align: justify;
+    font-family: 'Algiria';
+    margin: 0 auto;
+    text-align: left;
+    text-indent: 0px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    padding: 0 20px;
+    line-height: 25px;
+
+}
+
+p.description::first-letter {
+    font-size: 1.5em;
+    /* Adjust the font size as desired */
+    font-weight: bold;
+    /* Make the first letter bold */
 }
 
 #message {
@@ -81,20 +88,33 @@ p {
 }
 
 .elgif {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 60px;
     height: 60px;
     margin-top: 7px;
     margin-bottom: 5px;
-
 }
 
 footer {
-    background-color: #bbf5ae;
-    color: #050404;
+    background-color: #312f2f;
+    position: relative;
+    color: #ffffff;
     padding: 5px;
     text-align: center;
-    position: fixed;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100%;
+}
+
+.powered-by {
+    width: auto;
+    height: 30px;
+    margin-left: 10px;
 }
