@@ -2,14 +2,15 @@
 <html>
 
 <head>
-    <title>About My Website</title>
+    <title>Contact</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="description" content="This website is made to learn and give the good information to world">
     <meta name="keywords" content="learning, projects, programing">
     <meta name="robots" content="index, follow">
-    <link rel="stylesheet" type="text/css" href="stylesheet/about_styles.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet/contact_styles.css">
     <link rel="icon" href="webImage/web_icon.png" type="image/x-icon">
+    <script src="javascript/contact_script.js"></script>
 
 </head>
 <header>
@@ -21,52 +22,117 @@
 <nav>
     <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="#" class="active">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#" class="active">Contact</a></li>
     </ul>
 </nav>
 
 <body>
-    <div>
-        <img class="elgif" src="webImage/gif_el.gif" alt="welcome">
+    <div id="contact-popup" class="contact-form-popup">
+        <form id="contact-form" onsubmit="submitForm(event)" action="/submit" method="POST">
+            <h2>We would love to hear from you!</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your good name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="question">Question or suggestion:</label>
+                <textarea id="question" name="question" required placeholder="Any question or suggestion"></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">Submit</button>
+            <button type="button" class="close-button" onclick="closePopup()">Close</button>
+        </form>
     </div>
-    <h2 class="who-we-are">Who We Are</h2>
-    <div>
-        <p class="description">
-            At our core, we are a group of dedicated individuals who believe in the power of knowledge and its ability
-            to transform lives. Our mission is to help people learn something new, expand their horizons, and discover
-            their full potential. We recognize that learning is a lifelong journey, and we strive to be a guiding light
-            along that path.
-        </p>
-        <p class="description">
-            We understand that the world can sometimes be overwhelming, filled with challenges and negativity. That's
-            why we are committed to spreading positivity and optimism. We believe that by focusing on the good,
-            celebrating achievements, and embracing a growth mindset, we can create a ripple effect that inspires others
-            to do the same.
-        </p>
-        <p class="description">
-            We aspire to make the world a better place, one person at a time. Through our work, we aim to empower
-            individuals, regardless of their background or circumstances, to access knowledge and resources that can
-            unlock
-            new opportunities. We believe that education is a catalyst for change, and by providing learning
-            experiences, we
-            contribute to the personal growth and development of individuals, enabling them to make a positive impact on
-            their communities and society as a whole.
-        </p>
-        <p class="description">
-            Our dedication to making the world better extends beyond the realm of education. We actively seek out ways
-            to
-            support and uplift others, whether it's through charitable initiatives, community engagement, or promoting
-            social
-            causes. We understand that true progress is a collective effort, and by working together, we can create a
-            brighter, more inclusive future for all.
-        </p>
-        <p class="description">
-            In summary, we are a group of passionate individuals driven by a shared purpose: to help people learn, grow,
-            and
-            thrive. Through our commitment to knowledge, positivity, and making a positive impact, we strive to create a
-            better world for everyone.
-        </p>
+
+    <button type="button" class="open-button" onclick="openPopup()">Have Any Quarry!</button>
+
+    <div id="thank-you-popup" class="thank-you-popup">
+        <h2>Thank You!</h2>
+        <p>Your form has been submitted successfully.</p>
+    </div>
+
+    <div class="quote-section">
+        <div class="quote">
+            "The future belongs to those who believe in the beauty of their dreams."
+        </div>
+        <div class="author">
+            - Eleanor Roosevelt
+        </div>
+    </div>
+
+    <div class="quote-section">
+        <div class="quote">
+            "Success is not final, failure is not fatal: It is the courage to continue that counts."
+        </div>
+        <div class="author">
+            - Winston Churchill
+        </div>
+    </div>
+
+    <div class="quote-section">
+        <div class="quote">
+            "Believe you can and you're halfway there."
+        </div>
+        <div class="author">
+            - Theodore Roosevelt
+        </div>
+
+        <div class="quote-section">
+            <div class="quote">
+                "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing,
+                you will be successful."
+            </div>
+            <div class="author">
+                - Albert Schweitzer
+            </div>
+        </div>
+
+        <div class="quote-section">
+            <div class="quote">
+                "The only limit to our realization of tomorrow will be our doubts of today."
+            </div>
+            <div class="author">
+                - Franklin D. Roosevelt
+            </div>
+        </div>
+
+        <div class="quote-section">
+            <div class="quote">
+                "The future belongs to those who believe in the beauty of their dreams."
+            </div>
+            <div class="author">
+                - Eleanor Roosevelt
+            </div>
+        </div>
+
+        <div class="quote-section">
+            <div class="quote">
+                "Don't watch the clock; do what it does. Keep going."
+            </div>
+            <div class="author">
+                - Sam Levenson
+            </div>
+        </div>
+        <div class="quote-section">
+            <div class="quote">
+                "You can't show only one part of yourself to someone."
+            </div>
+            <div class="author">
+                - someone
+            </div>
+        </div>
     </div>
 
 
@@ -74,7 +140,6 @@
         <p>&copy; 2023 stspsw. All rights reserved. Powered by<img class="powered-by" src="webImage/lgog_stspsw.png">
         </p>
     </footer>
-
 </body>
 
 </html>
