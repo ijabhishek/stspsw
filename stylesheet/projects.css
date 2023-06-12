@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    height: 12vh;
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    transform: scale(0.6);
+    overflow: hidden;
+    padding: 15px;
+
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #18d366;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a.active {
+    background-color: #FD6C03;
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+}
+
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #ecf007;
+    border: 1px solid #28115c;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    color: #000000;
+    font-weight: bolder;
+    transition: transform 0.5s;
+    perspective: 800px;
+    width: 90px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 45px;
+    margin-left: 20px;
+
+}
+
+.popup:hover {
+    background-color: #42dc82;
+}
+
+.popup-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #f9f9f9;
+    border: 1px solid #c8e165;
+    padding-bottom: 35px;
+    padding-right: 20px;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(239, 148, 148, 0.2);
+    border-radius: 15px;
+    top: auto;
+    background-color: #91e4bf;
+    margin-bottom: auto;
+    margin-top: 25px;
+    margin-left: 20px;
+
+}
+
+.popup-content:hover {
+    background-color: #83f4eb;
+}
+
+
+.sublist {
+    margin-top: 155px;
+    border-radius: 15px;
+    margin-left: 20px;
+    background-color: #b7f3ac;
+
+}
+
+.sublist:hover {
+    background-color: #8fe4b8;
+}
+
+
+.java {
+    background-image: url('/webImage/javaIcon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 26%;
+    background-position: right;
+    font-weight: bold;
+    color: rgb(255, 64, 0);
+    padding-top: 5px;
+
+}
+
+.python {
+    background-image: url('/webImage/pythonicon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 26%;
+    background-position: right;
+    font-weight: bold;
+    color: rgb(255, 64, 0);
+    padding-top: 5px;
+
+}
+
+.spring {
+    background-image: url('/webImage/springicon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 26%;
+    background-position: right;
+    font-weight: bold;
+    color: rgb(255, 64, 0);
+    padding-top: 5px;
+
+}
+
+.cplus {
+    background-image: url('/webImage/cplusicon.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 26%;
+    background-position: right;
+    font-weight: bold;
+    color: rgb(255, 64, 0);
+    padding-top: 5px;
+
+}
+
+.important {
+    background-image: url('/webImage/smile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 26%;
+    background-position: right;
+    font-weight: bold;
+    color: rgb(224, 18, 18);
+    padding-top: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+footer {
+    background-color: #312f2f;
+    color: #ffffff;
+    padding: 5px;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.powered-by {
+    width: auto;
+    height: 30px;
+    margin-left: 10px;
+}
