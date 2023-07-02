@@ -12,108 +12,116 @@
     <link rel="icon" href="webImage/web_icon.png" type="image/x-icon">
     <script src="javascript/projcets.js"></script>
 </head>
-<header>
-    <div class="image-container">
-        <h1><img src="webImage/lgog_stspsw.png" alt="STSPSW"></h1>
-    </div>
-
-
-</header>
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="#" class="active">Projects</a></li>
-    </ul>
-</nav>
 
 <body>
-    <div class="popup" onclick="togglePopup('projects')">
-        Projects
-    </div>
+    <header>
+        <div class="image-container">
+            <h1><img src="webImage/lgog_stspsw.png" alt="STSPSW"></h1>
+        </div>
 
-    <div class="popup-content" id="projects-popup">
-        <div class="popup" onclick="toggleSublist('java')">
-            Java
-        </div>
-        <div class="popup" onclick="toggleSublist('python')">
-            Python
-        </div>
-        <div class="popup" onclick="toggleSublist('springboot')">
-            Spring
-        </div>
-        <div class="popup" onclick="toggleSublist('cplus')">
-            C++
-        </div>
-        <div class="popup" onclick="toggleSublist('important')">
-            Important
-        </div>
-    </div>
 
-    <div class="popup-content sublist java" id="java-sublist">
+    </header>
+    <nav>
         <ul>
-            <li><a href="https://github.com/ijabhishek/Java_Project/tree/main/Snake">Snake Game</a></li>
-            <li><a href="https://github.com/ijabhishek/Java_Project/tree/main/Project_01">Music Player</a></li>
-            <li><a href="https://github.com/ijabhishek/Java_Project/tree/main/E_bill_calculation">Ebill Calculator</a>
-            </li>
-            <li><a href="https://github.com/ijabhishek/Java_Project/tree/main/Contact_Project">Contact Console</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#" class="active">Projects</a></li>
         </ul>
-    </div>
+    </nav>
 
-    <div class="popup-content sublist python" id="python-sublist">
-        <ul>
-            <li><a href="https://github.com/ijabhishek/My-Projects/blob/main/Electrycity_bill_calculater.py">Ebill
-                    Calculator</a></li>
-            <li><a href="https://github.com/ijabhishek/My-Projects/blob/main/email_slicer.py">Email Slicer</a></li>
-            <li><a href="https://github.com/ijabhishek/My-Projects/blob/main/game_save_zortan.py">Save Zortan Game</a>
-            </li>
-        </ul>
-    </div>
+    <body>
+        <div class="popup" onclick="togglePopup('projects')">
+            Projects
+        </div>
 
-    <div class="popup-content sublist spring" id="springboot-sublist">
-        <ul>
-            <li><a href="https://github.com/ijabhishek/spring-boot/tree/main/SpringBootInAction">Taco Oreder version
-                    1.0</a></li>
-            <!-- <li>Project 7</li>
+        <div class="popup-content" id="projects-popup">
+            <div class="popup" onclick="toggleSublist('java')">
+                Java
+            </div>
+            <div class="popup" onclick="toggleSublist('python')">
+                Python
+            </div>
+            <div class="popup" onclick="toggleSublist('springboot')">
+                Spring
+            </div>
+            <div class="popup" onclick="toggleSublist('cplus')">
+                C++
+            </div>
+            <div class="popup" onclick="toggleSublist('important')">
+                Important
+            </div>
+        </div>
+
+        <div class="popup-content sublist java" id="java-sublist">
+            <ul>
+                <li><a href="https://github.com/ijabhishek/Java_Project/tree/main/Snake">Snake Game</a></li>
+                <li><a href="https://github.com/ijabhishek/Java_Project/tree/main/Project_01">Music Player</a></li>
+                <li><a href="https://github.com/ijabhishek/Java_Project/tree/main/E_bill_calculation">Ebill
+                        Calculator</a>
+                </li>
+                <li><a href="https://github.com/ijabhishek/Java_Project/tree/main/Contact_Project">Contact Console</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="popup-content sublist python" id="python-sublist">
+            <ul>
+                <li><a href="https://github.com/ijabhishek/My-Projects/blob/main/Electrycity_bill_calculater.py">Ebill
+                        Calculator</a></li>
+                <li><a href="https://github.com/ijabhishek/My-Projects/blob/main/email_slicer.py">Email Slicer</a></li>
+                <li><a href="https://github.com/ijabhishek/My-Projects/blob/main/game_save_zortan.py">Save Zortan
+                        Game</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="popup-content sublist spring" id="springboot-sublist">
+            <ul>
+                <li><a href="https://github.com/ijabhishek/spring-boot/tree/main/SpringBootInAction">Taco Oreder version
+                        1.0</a></li>
+                <!-- <li>Project 7</li>
             <li>Project 8</li>
             <li>Project 9</li> -->
-        </ul>
-    </div>
-    <div class="popup-content sublist cplus" id="cplus-sublist">
-        <ul>
-            <li><a href="https://github.com/ijabhishek/cpp_project/blob/main/Calculator.cpp">Calculator</a></li>
-            <li><a href="https://github.com/ijabhishek/cpp_project/blob/main/GuessingGame.cpp">Guessing Game</a></li>
-            <li><a href="https://github.com/ijabhishek/cpp_project/blob/main/RockPaperScissor.cpp">Rock Paper
-                    Scissor</a>
-            </li>
-            <li><a href="https://github.com/ijabhishek/cpp_project/blob/main/TemperatureConvertor.cpp">Temperature
-                    Convertor</a></li>
-            <li><a href="https://github.com/ijabhishek/cpp_project/blob/main/TicToe.cpp">Tic Toe </a></li>
-            <li><a href="https://github.com/ijabhishek/cpp_project/blob/main/TicToeVersion2.cpp">Tic Toe 2.0 </a></li>
-        </ul>
-    </div>
-    <div class="popup-content sublist important" id="important-sublist">
-        <p>Please Smile !</p>
-        <p>This is more important..</p>
-        <p>🙃😊🎶</p>
+            </ul>
+        </div>
+        <div class="popup-content sublist cplus" id="cplus-sublist">
+            <ul>
+                <li><a href="https://github.com/ijabhishek/cpp_project/blob/main/Calculator.cpp">Calculator</a></li>
+                <li><a href="https://github.com/ijabhishek/cpp_project/blob/main/GuessingGame.cpp">Guessing Game</a>
+                </li>
+                <li><a href="https://github.com/ijabhishek/cpp_project/blob/main/RockPaperScissor.cpp">Rock Paper
+                        Scissor</a>
+                </li>
+                <li><a href="https://github.com/ijabhishek/cpp_project/blob/main/TemperatureConvertor.cpp">Temperature
+                        Convertor</a></li>
+                <li><a href="https://github.com/ijabhishek/cpp_project/blob/main/TicToe.cpp">Tic Toe </a></li>
+                <li><a href="https://github.com/ijabhishek/cpp_project/blob/main/TicToeVersion2.cpp">Tic Toe 2.0 </a>
+                </li>
+            </ul>
+        </div>
+        <div class="popup-content sublist important" id="important-sublist">
+            <p>Please Smile !</p>
+            <p>This is more important..</p>
+            <p>🙃😊🎶</p>
 
-    </div>
-    <div class="container">
-        <h2>Thank You for Visiting Our Website!</h2>
-        <p>We appreciate your time and effort in exploring our project. Your support means a lot to us.</p>
-        <p>"Embrace the power of technology, where innovation knows no bounds"</p>
-        <p>With each line of code, you have the power to shape the future and make a difference. Embrace the endless
-            possibilities that technology offers and let your imagination soar.</p>
-        <p>Remember, the only limit is your determination to push beyond what's possible. Keep innovating, keep
-            learning, and let technology be your guide to a brighter tomorrow.</p>
-        <p>If you have any feedback or suggestions, we would love to hear from you.</p>
-        <p>Thank you once again, and we hope to see you soon!</p>
-    </div>
-    <footer>
-        <p>&copy; 2023 stspsw. All rights reserved. Powered by<img class="powered-by" src="webImage/lgog_stspsw.png">
-        </p>
-    </footer>
-</body>
+        </div>
+        <div class="container">
+            <h2>Thank You for Visiting Our Website!</h2>
+            <p>We appreciate your time and effort in exploring our project. Your support means a lot to us.</p>
+            <p>"Embrace the power of technology, where innovation knows no bounds"</p>
+            <p>With each line of code, you have the power to shape the future and make a difference. Embrace the endless
+                possibilities that technology offers and let your imagination soar.</p>
+            <p>Remember, the only limit is your determination to push beyond what's possible. Keep innovating, keep
+                learning, and let technology be your guide to a brighter tomorrow.</p>
+            <p>If you have any feedback or suggestions, we would love to hear from you.</p>
+            <p>Thank you once again, and we hope to see you soon!</p>
+        </div>
+        <footer>
+            <p>&copy; 2023 stspsw. All rights reserved. Powered by<img class="powered-by"
+                    src="webImage/lgog_stspsw.png">
+            </p>
+        </footer>
+    </body>
 
 </html>
