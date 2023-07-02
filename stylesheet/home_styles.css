@@ -91,10 +91,31 @@ footer {
     color: #ffffff;
     padding: 5px;
     text-align: center;
-    height: 50px;
+    height: 60px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    /* Remove default margin */
+}
+
+.made-in {
+    margin-top: 7px;
+    font-size: 13px;
+    font-family: 'Special Elite'
+}
+
+.made-in span {
+    color: #ff0202;
+    /* Replace with your desired color */
 }
 
 .powered-by {
